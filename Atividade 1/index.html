@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+    <title>Exercicio 1</title>
+    <style>
+        form{
+            width: 460px;
+            display: flex;
+        }
+        a , label , h2 , button, input{
+            font-family: 'Fredoka One', cursive;
+            padding-right: 10px;
+            
+        }
+        button{
+            background-color: white;
+        }
+        .buttons{
+            width: 300px;
+            display: flex;
+            justify-content: space-evenly ;
+            padding-top: 30px;
+        }
+        .password{
+            width: 100px;
+            
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h2 class="title">Tela de Login</h2>
+            <label for="user">Usuário</label>
+            <input type="text" name="user" id="user"> <br> <br> <br>
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" class="password" value="*********"> 
+            <a href="#">Esqueceu sua senha? Clique aqui</a> <br> <br> <br>
+            <div class="buttons">
+                <button>Fazer Login</button>
+                <button>Cadastrar</button>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>

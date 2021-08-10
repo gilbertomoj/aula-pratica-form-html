@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+    <style>
+        form{
+            width: 800px;
+            height: 400px;
+        }
+        *{
+            font-family: 'Fredoka One', cursive;
+        }
+        .buttons{
+            display: flex;
+            padding-top: 20px;
+            justify-content: space-evenly;
+            padding-bottom: 20px;
+        }
+        .header{
+            width: 600px;
+            padding-left: 30px;
+        }
+        .title-header{
+            border-radius: 4px;
+            padding-right: 24px;
+            background-color: #E0FFFF;
+        }
+        .form-content{
+            background-color: #E0FFFF;
+        }
+        .content-header{
+            background-color: #B0E0E6;
+        }
+        table{
+            border-collapse: collapse;
+        }
+
+        .table-content{
+            border-radius: 4px;
+            padding-right: 25px;
+        }
+        .extra-content{
+            width: 700px;
+
+        }
+        .border{
+            border:solid 1px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="border">
+            <label for=""> > Manutenção do Órgão Colegiado</label> <br> <br>
+            <div class="header">
+                <table border="1">
+                    <tr>
+                        <td class="title-header">Unidade</td>
+                        <td class="content-header">FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA</td>
+                    </tr>
+                    <tr>
+                        <td class="title-header">Tipo Colegiado</td>
+                        <td class="content-header">CONGREGAÇÃO</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-content">
+
+            
+                <h4 class="content-header">Órgão Colegiado</h4>
+
+                <table >
+                    <tr>
+                        <td class="table-content"><label for="nome">Nome</label></td>
+                        <td class="" ><input type="text" name="nome" id="nome" size="50" value="CONGRAÇÃO DA FACULDADE DE ILHA SOLTEIRA" /></td>
+                    </tr>
+                    <tr>
+                        <td class="table-content">Sigla</td>
+                        <td class=""><input type="text" size="4" value="CFIS"></td>
+                        <td><label for="status">Status</label></td>
+                        <td>
+                            <select name="status" id="status">
+                            <option value="ativado">Ativado</option>
+                            <option value="desativado">Desativado</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="data">Data ativação</label></td>
+                        <td><input type="date" value="2000-10-15" name="data" disabled></td>
+                        
+                        <td><label for="datadesat">Data <br>desativação</label></td>
+                        <td><input type="date" name="data"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="origem">Órgão de Origem</label> </td>
+                        <td><input type="text" name="origem" size="40"> <input type="button" value="Buscar"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><label for="origem">Órgão Superior</label></td>
+                        <td><input type="text" name="superior" size="40"> <input type="button" value="Buscar"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="doc">Documentação</label></td>
+                        <td><textarea id="doc" name="txtarea" rows="3" cols="50">Órgão criado com o objetivo de aprovar normas da unidade
+                        </textarea></td>
+                    </tr>
+
+                </table>
+
+
+
+                <div class="buttons">
+                    <button>Salvar</button>
+                    <button>Excluir</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

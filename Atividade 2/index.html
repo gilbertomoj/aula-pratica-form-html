@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Recriação de Tela</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+    <style>
+        form{
+            width: 600px;
+        }
+        *{
+            font-family: 'Fredoka One', cursive;
+        }
+        button{
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h1>Formulário</h1>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="name">Nome:</label>
+                <input type="text" name="name"> <br>
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco"> <br>
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="city"> <br> 
+                <label for="estados">Estados:</label>
+                <select name="estados" id="estados">
+                    <option value="">São Paulo</option>
+                    <option value="">Rio de Janeiro</option>
+                    <option value="">Pernambuco</option>
+                    <option value="">Bahia</option>
+                    <option value="">Manaus</option>
+                    <option value="">Acre</option>
+                </select>
+            </fieldset> <br> <br>
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                <label>Natureza do cargo</label> <br>
+                <input type="radio" name="cargo"value="gerencia">
+                <label for="gerencia">Gerência</label>
+                <input type="radio" name="cargo"value="financeiro">
+                <label for="financeiro">Financeiro</label>
+                <input type="radio" name="cargo"value="recepcao">
+                <label for="recepcao">Recepção</label>
+                <input type="radio" name="cargo"value="administrativo">
+                <label for="recepcao">Administrativo</label>
+                <input type="radio" name="cargo"value="juridico">
+                <label for="recepcao">Juridico</label> 
+                <br> <br>
+                <label for="">Área de Interesse</label> <br>
+                <input type="checkbox" name="comp">
+                <label for="comp">Computação</label>
+                <input type="checkbox" name="comp">
+                <label for="comp">Biologia</label>
+                <input type="checkbox" name="comp">
+                <label for="comp">Meio ambiente</label>
+                <input type="checkbox" name="comp">
+                <label for="comp">Engenharia</label>
+                <input type="checkbox" name="comp">
+                <label for="comp">História</label> <br>
+                <label for="txtarea">Mini-curriculo:</label>
+                <textarea id="txtarea" name="txtarea" rows="4" cols="40">
+                </textarea>
+            </fieldset> 
+            <br> 
+            <button>Enviar</button>
+            <button>Limpar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
